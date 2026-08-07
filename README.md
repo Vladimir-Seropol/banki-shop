@@ -91,9 +91,3 @@ banki-shop/
 npm run build
 
 ```
-
-## Демо
-
-
-
-

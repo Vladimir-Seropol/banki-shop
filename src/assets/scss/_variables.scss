@@ -1,0 +1,62 @@
+$bgc: #f6f3f3;
+$primary: #403432;
+$primary-hover: #776763;
+$primary-disable: #c1b4b1;
+$secondary: #5b3a32;
+$secondary-foot: #eceaea;
+$secondary-disable: #e1e1e1;
+$font-light: #f4f6f9;
+$font-dark: #343030;
+
+.container {
+  max-width: 1270px;
+  padding: 0 23px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.btn {
+  background-color: $primary;
+  color: $font-light;
+  padding: 13px 36px;
+  transition-duration: 0.2s;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 21px;
+  white-space: nowrap;
+
+  &:hover:not(:disabled) {
+    background-color: $primary-hover;
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

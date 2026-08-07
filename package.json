@@ -4,7 +4,7 @@
   "private": true,
   "description": "Banki.shop test assignment — Vue 2 + TypeScript + Webpack",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "serve": "webpack serve --mode development --open",
